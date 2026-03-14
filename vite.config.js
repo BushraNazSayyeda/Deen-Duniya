@@ -3,8 +3,11 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/',
   build: {
     outDir: 'dist',
+  },
+  resolve: {
+    extensions: ['.jsx', '.js', '.tsx', '.ts'],
   },
 })
